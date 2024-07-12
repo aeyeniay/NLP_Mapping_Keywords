@@ -1,0 +1,1208 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/annasv/ontologies/2021/2/untitled-ontology-18#"
+     xml:base="http://www.semanticweb.org/annasv/ontologies/2021/2/untitled-ontology-18"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.annasvijaya.com/ontology/ESG01"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#hasKPI -->
+
+    <owl:ObjectProperty rdf:about="http://www.annasvijaya.com/ontology/ESG01#hasKPI">
+        <owl:inverseOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#isKPI_Of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#hasMeasure -->
+
+    <owl:ObjectProperty rdf:about="http://www.annasvijaya.com/ontology/ESG01#hasMeasure">
+        <rdfs:subPropertyOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#hasKPI"/>
+        <owl:inverseOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#isMeasuredBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#isKPI_Of -->
+
+    <owl:ObjectProperty rdf:about="http://www.annasvijaya.com/ontology/ESG01#isKPI_Of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#isMeasuredBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.annasvijaya.com/ontology/ESG01#isMeasuredBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#isKPI_Of"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Access_to_Basic_Services -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Access_to_Basic_Services">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Social"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Access_to_Healthcare -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Access_to_Healthcare">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Social"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Animal_Welfare -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Animal_Welfare">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Social"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Anti-Competitive_Practices -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Anti-Competitive_Practices">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Social"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#AuM_under_ESG -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#AuM_under_ESG">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#E"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Audit -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Audit">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Governance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Biodiversity -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Biodiversity">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Board -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Board">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Social"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Board_Diversity -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Board_Diversity">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Social"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Board_Gender_Diversity -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Board_Gender_Diversity">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Social"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Building_Certification -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Building_Certification">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#E"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Business_Ethics -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Business_Ethics">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Social"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#CO2_Emission_of_Fleet_of_Sold_Leased -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#CO2_Emission_of_Fleet_of_Sold_Leased">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#E"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Certification_of_Facilities -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Certification_of_Facilities">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#S"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Chairman_Ceo_Separation -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Chairman_Ceo_Separation">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Social"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Child_Labor -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Child_Labor">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Social"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Climate_Risk_Management -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Climate_Risk_Management">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Clinical_Trials -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Clinical_Trials">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Collective_Bargaining -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Collective_Bargaining">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Community_and_Society -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Community_and_Society">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Social"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Contributions_to_political_parties -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Contributions_to_political_parties">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Governance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Contributions_to_political_parties_KPI -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Contributions_to_political_parties_KPI">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#G"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Corruption -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Corruption">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Customer_Relationship -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Customer_Relationship">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Demographic_Change -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Demographic_Change">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#S"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Dimensions_of_pending_legal_proceedings -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Dimensions_of_pending_legal_proceedings">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Governance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Dimensions_of_pending_legal_proceedings_KPI -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Dimensions_of_pending_legal_proceedings_KPI">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#G"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Direct_Building_Energy_Consumption -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Direct_Building_Energy_Consumption">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#E"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Discrimination_and_Diversity -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Discrimination_and_Diversity">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Social"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Diversity -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Diversity">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#S"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#E -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#E">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#ESG_KPI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#ESG -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#ESG"/>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#ESG_KPI -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#ESG_KPI"/>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#ESG_incentives -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#ESG_incentives">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Eco-Design -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Eco-Design">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#E"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Eco-Design_of_Cleaning_substances -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Eco-Design_of_Cleaning_substances">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#E"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Ecosystems_Biodiversity_and_Climate_Change_Mitigation -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Ecosystems_Biodiversity_and_Climate_Change_Mitigation">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#E"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Electromagnetic_Fields -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Electromagnetic_Fields">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Emission_Rights -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Emission_Rights">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#E"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Emissions_to_Air -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Emissions_to_Air">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#E"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Employee_Development -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Employee_Development">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Social"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Employee_Turnover -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Employee_Turnover">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Social"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#End_of_Product_Lifecycle -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#End_of_Product_Lifecycle">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#E"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Energy -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Energy">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Energy_Efficiency -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Energy_Efficiency">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#E"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Environment -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Environment">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#ESG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Environmental_Compatibility -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Environmental_Compatibility">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#E"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Environmental_Fines -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Environmental_Fines">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Environmental_Management_System -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Environmental_Management_System">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Environmental_Policy -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Environmental_Policy">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Environmental_Reporting -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Environmental_Reporting">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Expenditure_for_Veterinary_Pharmaceuticals_Seeds_Herbicides_Pesticides_and_Other_Drugs -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Expenditure_for_Veterinary_Pharmaceuticals_Seeds_Herbicides_Pesticides_and_Other_Drugs">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#E"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Financial_Inclusion -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Financial_Inclusion">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Forests -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Forests">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Freelancer_as_part_of_staff -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Freelancer_as_part_of_staff">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#S"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Fuels -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Fuels">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#E"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#G -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#G">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#ESG_KPI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#GHG_Emissions -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#GHG_Emissions">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#GHG_Emissions_KPI -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#GHG_Emissions_KPI">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#E"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#GHG_Policies -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#GHG_Policies">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#GMOs -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#GMOs">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Gene_Modified_Organisms -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Gene_Modified_Organisms">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#E"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Generation_Portfolio -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Generation_Portfolio">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#E"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Global_Compact_Membership -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Global_Compact_Membership">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Governance -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Governance">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#ESG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Green_Buildings -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Green_Buildings">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Green_Products -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Green_Products">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#HIV_Programmes -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#HIV_Programmes">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Social"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Hazardous_Waste -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Hazardous_Waste">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Health_and_Safety -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Health_and_Safety">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Social"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Human_Rights -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Human_Rights">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Social"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Indigenous_Rights -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Indigenous_Rights">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Social"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Intermodality -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Intermodality">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#S"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Labor_Practices -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Labor_Practices">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Social"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Leakages -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Leakages">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#E"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Load_Factor -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Load_Factor">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#E"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Lobbying -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Lobbying">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Local_Staff -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Local_Staff">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#S"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Material_Sourcing -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Material_Sourcing">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#E"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Maturity_of_workforce -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Maturity_of_workforce">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#S"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Microfinance -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Microfinance">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#S"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Microinsurance -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Microinsurance">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#S"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#NCAP_Ratings -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#NCAP_Ratings">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#S"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Non-GHG_Air_emissions -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Non-GHG_Air_emissions">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Others -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Others">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#ESG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Ozone_Depleting_Gases -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Ozone_Depleting_Gases">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Packaging -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Packaging">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Packaging_KPI -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Packaging_KPI">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#E"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Passenger -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Passenger">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#E"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Philanthrophy -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Philanthrophy">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Privacy_and_IT -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Privacy_and_IT">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Product_Safety -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Product_Safety">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Product_Withdrawals -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Product_Withdrawals">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#G"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Production_Shortfall -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Production_Shortfall">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#E"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Public_Health -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Public_Health">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Social"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Quality_of_Service -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Quality_of_Service">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#S"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Radioactive_Waste -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Radioactive_Waste">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#E"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Raw_Material_Reserves -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Raw_Material_Reserves">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#E"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Recommendations -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Recommendations">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#S"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Recycling_Quota -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Recycling_Quota">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#E"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Refrigerant_refill_rate -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Refrigerant_refill_rate">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#E"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Remediation -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Remediation">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#E"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Remuneration -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Remuneration">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Social"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Remuneration_KPI -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Remuneration_KPI">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#S"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Reporting_Quality -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Reporting_Quality">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Governance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Research_Universe -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Research_Universe">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#S"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Resource_Efficiency -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Resource_Efficiency">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Responsible_Marketing -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Responsible_Marketing">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Restructuring-related_relocation_of_jobs -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Restructuring-related_relocation_of_jobs">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#S"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#S -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#S">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#ESG_KPI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Shareholders -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Shareholders">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Site_Closure -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Site_Closure">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Social -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Social">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#ESG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Spent_Pot_Lining_SPL -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Spent_Pot_Lining_SPL">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#E"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Split_of_Activities -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Split_of_Activities">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#E"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Staff_turnover -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Staff_turnover">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#S"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Subcontracting -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Subcontracting">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#E"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Supplier_Agreements_and_Supply_Chain_Partners_Screened_for_Risk_of_ESG_Infringement -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Supplier_Agreements_and_Supply_Chain_Partners_Screened_for_Risk_of_ESG_Infringement">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#S"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Supply_Chain -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Supply_Chain">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Supply_Constraints -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Supply_Constraints">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#E"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Sustainable_Finance -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Sustainable_Finance">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Systemic_Risk -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Systemic_Risk">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#TEEB -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#TEEB">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#S"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Taxes -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Taxes">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Toxic_Spills -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Toxic_Spills">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Unions -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Unions">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#V -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#V">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#ESG_KPI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Waste -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Waste">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Environment"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.annasvijaya.com/ontology/ESG01#hasMeasure"/>
+                <owl:someValuesFrom rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Waste_Scope_I"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Waste_KPI -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Waste_KPI">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#E"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Waste_Scope_I -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Waste_Scope_I">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Waste_KPI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Waste_Scope_II -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Waste_Scope_II">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Waste_KPI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Waste_Scope_III -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Waste_Scope_III">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Waste_KPI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Waste_Scope_IV -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Waste_Scope_IV">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Waste_KPI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Water -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Water">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Environment"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.annasvijaya.com/ontology/ESG01#hasKPI"/>
+                <owl:someValuesFrom rdf:resource="http://www.annasvijaya.com/ontology/ESG01#Water_Consumption"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Water_Consumption -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Water_Consumption">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#E"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Accidental_oil/gas_spills -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Accidental_oil/gas_spills">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#E"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Fatalities_&amp;_Injuries -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Fatalities_&amp;_Injuries">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#S"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Health_&amp;_Safety_Aspects_of_Products -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Health_&amp;_Safety_Aspects_of_Products">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#S"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Maintenance_&amp;_safety -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Maintenance_&amp;_safety">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#S"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Sustainable_Organic_&amp;_Fair_Trade_Products -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Sustainable_Organic_&amp;_Fair_Trade_Products">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#E"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.annasvijaya.com/ontology/ESG01#Training_&amp;_qualification -->
+
+    <owl:Class rdf:about="http://www.annasvijaya.com/ontology/ESG01#Training_&amp;_qualification">
+        <rdfs:subClassOf rdf:resource="http://www.annasvijaya.com/ontology/ESG01#S"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
